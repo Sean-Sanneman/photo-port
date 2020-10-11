@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Modal = ({ onClose, currentPhoto }) => {
-    const { name, category, description, index } = currentPhoto;
-
+    const { name, description, category, index } = currentPhoto;
 
     return (
         <div className="modalBackdrop">
@@ -14,6 +13,6 @@ const Modal = ({ onClose, currentPhoto }) => {
             </div>
         </div>
     );
-}
+};
 
 export default Modal;

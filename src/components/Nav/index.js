@@ -1,15 +1,13 @@
-
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-
     const {
         categories = [],
         setCurrentCategory,
-        currentCategory,
         contactSelected,
-        setContactSelected
+        currentCategory,
+        setContactSelected,
     } = props;
 
     useEffect(() => {
@@ -35,7 +33,7 @@ function Nav(props) {
                     </li>
                     {categories.map((category) => (
                         <li
-                            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && `navActive`
+                            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
                                 }`}
                             key={category.name}
                         >
